@@ -1,0 +1,49 @@
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-btn:hover + .dropdown-content, .dropdown-content:hover {
+    display: block;
+}
+
+.left-sidebar .d-flex.flex-column {
+    height: 100%;
+}
+
+.left-sidebar .upgrade-section {
+    margin-top: auto;  /* Questo sposta la sezione "Upgrade to pro" alla parte inferiore del flex container */
+}
